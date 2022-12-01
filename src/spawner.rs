@@ -24,10 +24,11 @@ pub fn spawn_monster(
             pos,
             Render{
                 color: ColorPair::new(WHITE, BLACK),
-                glyph: match rng.range(0, 4){
+                glyph: match rng.range(0, 5){
                     0 => to_cp437('E'),
                     1 => to_cp437('O'),
                     2 => to_cp437('o'),
+                    3 => to_cp437('G'),
                     _ => to_cp437('g'),
                 }
             },
